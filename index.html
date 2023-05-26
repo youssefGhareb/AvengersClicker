@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Avengers Clicker</title>
+</head>
+
+<body>
+    <div class="container py-3">
+        <div class="admin-option">
+                <button type="submit" class="btn btn-warning" id="toggleBtn">Admin Mode</button>
+        </div>
+        <div class="admin-mode" id="admin-wrapper">
+            <div class="row align-items-end">
+                <div class="col-md-3">
+                    <div class="">
+                        <label for="nameInput" class="form-label">Avenger Name</label>
+                        <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <label for="countInput" class="form-label">Avenger Count</label>
+                        <input type="number" class="form-control" id="countInput">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <label for="urlInput" class="form-label">Avenger Image URL</label>
+                        <input type="text" class="form-control" id="urlInput">
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary" id="saveBtn">Save</button>
+                    <button type="submit" class="btn btn-warning" id="closeBtn">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="row-wrapper shadow-lg">
+            <div class="row align-items-center" id="row-selector">
+                <div class="col-md-5">
+                    <ul class="avengers-list">
+                    </ul>
+                </div>
+                <div class="col-md-7" id="selected-avenger-wrapper">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dfe4be2fda.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
