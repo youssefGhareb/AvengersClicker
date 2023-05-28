@@ -203,8 +203,8 @@ const selectedAvengerView = {
         this.parentElement.html('');
         this.parentElement.append(
             `
-                    <div class="selected-avenger" onclick=appController.currentAvengerClick()>
-                        <div class="selected-avenger-imgCont">
+                    <div class="selected-avenger">
+                        <div class="selected-avenger-imgCont"  onclick=appController.currentAvengerClick()>
                             <img src="${this.avenger.url}" class="img-fluid">
                         </div>
                         <h1 class="selected-avenger-name">
